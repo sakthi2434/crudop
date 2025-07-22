@@ -1,0 +1,42 @@
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow p-4" style="width: 100%; max-width: 500px;">
+      <h2 class="mb-4 text-center">Add/Edit Customer</h2>
+      <form [formGroup]="register" (ngSubmit)="SaveCustomer()">
+        
+        <div class="mb-3">
+          <input type="hidden" formControlName="code">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter full name" formControlName="name">
+          <span class="text-danger" *ngIf="register.get('name')?.touched && register.get('name')?.invalid">
+            Name is required
+          </span>
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email">
+          <span class="text-danger" *ngIf="register.get('email')?.touched && register.get('email')?.errors?.['required']">
+            Email is required
+          </span>
+          <span class="text-danger" *ngIf="register.get('email')?.touched && register.get('email')?.errors?.['email']">
+            Enter a valid email
+          </span>
+        </div>
+  
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter phone number" formControlName="phone">
+          <span class="text-danger" *ngIf="register.get('phone')?.touched && register.get('phone')?.errors?.['maxlength']">
+            Phone number cannot exceed 10 digits
+          </span>
+        </div>
+  
+        <div class="mb-3">
+          <button type="submit" class="btn btn-success">Save</button>  
+          <span [class]="messageclass" style="margin-left: 90px;">{{message}}</span>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+  
