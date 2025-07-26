@@ -1,0 +1,10 @@
+com\sakthi\project\Controller\UserController.class
+com\sakthi\project\Controller\UserController$FrontendController.class
+com\sakthi\project\Project1Application.class
+com\sakthi\project\repository\UserRepository.class
+com\sakthi\project\Service\UserService.class
+com\sakthi\project\config\CorsConfig.class
+com\sakthi\project\Service\UserServiceImpl.class
+com\sakthi\project\controller.class
+com\sakthi\project\model\User.class
+com\sakthi\project\config\CorsConfig$1.class

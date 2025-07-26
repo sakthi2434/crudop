@@ -1,6 +1,6 @@
 # === Java + Maven ===
-target/
-!target/*.war                # ✅ allow WAR files
+# target/
+# !target/*.war                # ✅ allow WAR files
 
 # === Maven Wrapper ===
 .mvn/
