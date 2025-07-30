@@ -1,0 +1,13 @@
+
+.header{
+    background-color: rgb(111, 111, 236);
+    padding: 20px;
+}
+a{
+    color: black;
+    margin-left: 25px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}

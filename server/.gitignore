@@ -1,0 +1,39 @@
+# === Java + Maven ===
+target/
+!target/*.war                # ✅ allow WAR files
+
+# === Maven Wrapper ===
+.mvn/
+!**/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# === Eclipse / STS ===
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# === IntelliJ IDEA ===
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# === NetBeans ===
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# === Gradle (if used) ===
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# === VS Code ===
+.vscode/

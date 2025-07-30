@@ -1,0 +1,11 @@
+th{
+    background-color: rgb(43, 43, 233);
+    color: white;
+}
+
+.row{
+    margin-top: 10px;
+}
+.card-box{
+    padding: 30px;
+}
